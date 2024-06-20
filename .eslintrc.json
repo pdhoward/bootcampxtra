@@ -1,0 +1,37 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-alert": 0,
+    "no-console": 0,
+    "react/prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "no-undef": 0
+  },
+  "overrides": [
+    {
+      "files": [
+        "01-Class-Content/01-HTML-Git-CSS/**",
+        "01-Class-Content/02-CSS-Bootstrap/**",
+        "01-Class-Content/03-JavaScript/**",
+        "01-Class-Content/04-Web-APIs/**",
+        "01-Class-Content/05-Third-Party-APIs/**",
+        "01-Class-Content/06-Server-Side-APIs/**"
+      ],
+      "rules": {
+        "no-var": "off",
+        "vars-on-top": 0,
+        "block-scoped-var": 0,
+        "no-redeclare": 0,
+        "no-plusplus": 0,
+        "no-undef": 0,
+        "no-alert": 0,
+        "no-console": 0
+      },
+      "env": {
+        "es6": false
+      }
+    }
+  ]
+}
